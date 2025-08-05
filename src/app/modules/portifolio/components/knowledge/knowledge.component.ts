@@ -12,10 +12,6 @@ export class KnowledgeComponent {
             alt: 'HTML5',
         },
         {
-            src: 'assets/icons/knowledge/html5.svg',
-            alt: 'HTML5',
-        },
-        {
             src: 'assets/icons/knowledge/css3.svg',
             alt: 'CSS3',
         },
@@ -28,8 +24,8 @@ export class KnowledgeComponent {
             alt: 'Angular',
         },
         {
-            src: 'assets/icons/knowledge/sass.svg',
-            alt: 'Sass',
+            src: 'assets/icons/knowledge/nodejs.svg',
+            alt: 'Node.js',
         },
     ])
 
