@@ -1,0 +1,30 @@
+<div class="container">
+    <h2>Meus Projetos</h2>
+    <ul>
+        @for (item of arrayProjects(); track item) {
+            <li>
+                <button>
+                    <img
+                        [src]="item.src"
+                        [alt]="item.alt"
+                        [attr.width]="item.width"
+                        [attr.height]="item.height"
+                        loading="lazy"
+                    />
+                </button>
+            </li>
+        }
+        <li>
+            <button>
+                <img
+                    src=""
+                    alt=""
+                    width=""
+                    height=""
+                    loading="lazy"
+                />
+            </button>
+        </li>
+    </ul>
+
+</div>

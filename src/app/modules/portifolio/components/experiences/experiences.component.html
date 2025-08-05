@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Últimas Experiências</h2>
+
+  <div *ngFor="let item of arrayExperiences(); trackBy: trackByFn">
+    <details>
+      <summary>
+        <p>
+          <strong>{{ item.summary.strong }}</strong>
+          {{ item.summary.p }}
+        </p>
+      </summary>
+      <article [innerHtml]="item.text"></article>
+    </details>
+  </div>
+</div>
