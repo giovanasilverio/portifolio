@@ -1,18 +1,17 @@
-<app-header/> 
+<app-header></app-header>
 
 <main>
-    <app-knowledge/>
-    <app-experiences/>
-    <app-projects/>
-    @defer (on viewport){
-        <app-projects/>
-    }@placeholder{
+  <app-knowledge></app-knowledge>
+  <app-experiences></app-experiences>
+
+  <ng-container *ngIf="isProjectsVisible; else placeholder">
+    <app-projects></app-projects>
+  </ng-container>
+
+  <ng-template #placeholder>
     <section>
-        <h2>Carregando os projetos...</h2>
+      <h2 *ngIf="!loadError">Carregando os projetos...</h2>
+      <h2 *ngIf="loadError">Erro ao carregar os projetos</h2>
     </section>
-    }@error{
-    <section>
-        <h2>Erro ao carregar os projetos</h2>
-    </section>
-    }
+  </ng-template>
 </main>
