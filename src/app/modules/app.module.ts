@@ -9,6 +9,7 @@ import { KnowledgeComponent } from './portifolio/components/knowledge/knowledge.
 import { ExperiencesComponent } from './portifolio/components/experiences/experiences.component';
 import { ProjectsComponent } from './portifolio/components/projects/projects.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { DialogProjectsComponent } from './portifolio/components/dialog/dialog-projects/dialog-projects.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     HomeComponent,
     KnowledgeComponent,
     ExperiencesComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    DialogProjectsComponent
   ],
   imports: [
     BrowserModule,
