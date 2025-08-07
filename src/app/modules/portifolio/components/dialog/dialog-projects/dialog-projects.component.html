@@ -1,1 +1,16 @@
-<p>dialog-projects works!</p>
+<header>
+  <h2>{{ getData()?.title }}</h2>
+  <button (click)="closeModal()">
+    <img src="assets/icons/dialog/close.svg" alt="Fechar" />
+  </button>
+</header>
+
+<mat-dialog-content>
+  <h3>Descrição</h3>
+  <article [innerHTML]="getData()?.description"></article>
+  <nav>
+    <a *ngFor="let item of getData()?.links" [href]="item.href" target="_blank" class="btn btn-primary">
+      {{ item.name }}
+    </a>
+  </nav>
+</mat-dialog-content>

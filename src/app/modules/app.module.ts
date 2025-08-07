@@ -9,6 +9,7 @@ import { KnowledgeComponent } from './portifolio/components/knowledge/knowledge.
 import { ExperiencesComponent } from './portifolio/components/experiences/experiences.component';
 import { ProjectsComponent } from './portifolio/components/projects/projects.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatDialogModule } from '@angular/material/dialog';
 import { DialogProjectsComponent } from './portifolio/components/dialog/dialog-projects/dialog-projects.component';
 
 @NgModule({
@@ -19,11 +20,12 @@ import { DialogProjectsComponent } from './portifolio/components/dialog/dialog-p
     KnowledgeComponent,
     ExperiencesComponent,
     ProjectsComponent,
-    DialogProjectsComponent
+    DialogProjectsComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatDialogModule
   ],
   providers: [
     provideAnimationsAsync()
